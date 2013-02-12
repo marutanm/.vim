@@ -35,6 +35,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 
 " colorscheme
 NeoBundle 'mrtazz/molokai.vim'
+NeoBundle 'jellybeans.vim'
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -192,9 +193,8 @@ let g:memolist_path = "~/Dropbox/memo"
 nnoremap mn  :MemoNew<CR>
 nnoremap mf  :FufFile <C-r>=expand(g:memolist_path."/")<CR><CR>
 
+colorscheme jellybeans
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
 endif
-
-colorscheme molokai
 
