@@ -27,6 +27,7 @@ NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'goldfeld/vim-seek'
+NeoBundle 'Lokaltog/vim-powerline'
 
 " specific
 NeoBundle 'tpope/vim-haml'
@@ -59,11 +60,6 @@ set shiftwidth=2
 set expandtab
 set ruler
 set laststatus=2
-set statusline=
-set statusline+=%f\ %m%r%h%w
-set statusline+=[%Y][%{&fenc}]
-set statusline+=%=
-set statusline+=%<%c,%l\ %P
 set cursorline
 highlight CursorLine term=reverse cterm=reverse
 
@@ -194,6 +190,7 @@ nnoremap mn  :MemoNew<CR>
 nnoremap mf  :FufFile <C-r>=expand(g:memolist_path."/")<CR><CR>
 
 colorscheme jellybeans
+
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
 endif
