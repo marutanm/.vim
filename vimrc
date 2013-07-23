@@ -28,6 +28,7 @@ NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'kien/ctrlp.vim'
 
 " specific
 NeoBundle 'tpope/vim-haml'
@@ -168,6 +169,11 @@ function! s:unite_my_settings()
   inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
   nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
 endfunction
+
+" ctrlp
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_extensions = ['mixed', 'dir', 'line', 'quickfix']
 
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
