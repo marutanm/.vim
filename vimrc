@@ -31,7 +31,6 @@ NeoBundle 'Lokaltog/vim-powerline'
 
 " specific
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
 
 " colorscheme
