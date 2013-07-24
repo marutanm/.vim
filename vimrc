@@ -173,7 +173,7 @@ endfunction
 " ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_extensions = ['mixed', 'dir', 'line', 'quickfix']
+let g:ctrlp_extensions = ['mixed', 'line', 'changes', 'quickfix', 'dir']
 
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
