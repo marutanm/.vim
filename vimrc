@@ -27,7 +27,7 @@ NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'goldfeld/vim-seek'
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'bling/vim-airline'
 NeoBundle 'kien/ctrlp.vim'
 
 " specific
