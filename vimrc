@@ -27,7 +27,7 @@ NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'goldfeld/vim-seek'
-NeoBundle 'bling/vim-airline'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kien/ctrlp.vim'
 
 " specific
@@ -195,6 +195,12 @@ nnoremap mn  :MemoNew<CR>
 nnoremap mf  :FufFile <C-r>=expand(g:memolist_path."/")<CR><CR>
 
 colorscheme jellybeans
+
+" lightline
+let g:lightline = {
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
+      \ }
 
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
