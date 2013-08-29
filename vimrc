@@ -133,6 +133,11 @@ nnoremap tt :<c-u>tabnext<cr>
 nnoremap tp :<c-u>tabprevious<cr>
 nnoremap t[ :<c-u>tabprevious<cr>
 nnoremap te :<c-u>tabedit<cr>
+nnoremap tc :<c-u>tablast <bar> tabnew<cr>
+nnoremap tx :<c-u>tabclose<cr>
+for n in range(1, 9)
+  execute 'nnoremap <silent> t'.n ':<C-u>tabnext'.n.'<CR>'
+endfor
 
 " <Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
