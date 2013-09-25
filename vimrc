@@ -174,6 +174,9 @@ function! s:unite_my_settings()
   nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
   inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
   nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
+
+  nmap <buffer> Q <Plug>(unite_exit)
+  nmap <buffer> q <Plug>(unite_all_exit)
 endfunction
 
 " ctrlp
