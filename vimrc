@@ -208,8 +208,13 @@ colorscheme jellybeans
 " lightline
 let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '|', 'right': '|' }
+      \ 'subseparator': { 'left': '|', 'right': '|' },
+      \ 'component_function': { 'filename': 'MyFilename' },
       \ }
+
+function! MyFilename()
+  return &ft == 'unite' ? unite#get_status_string() : '' != expand('%') ? expand('%') : '[No Name]'
+endfunction
 
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
