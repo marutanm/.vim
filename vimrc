@@ -16,6 +16,7 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
+NeoBundle 'sgur/unite-git_grep'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-surround'
@@ -160,7 +161,7 @@ let g:unite_enable_start_insert=1
 let g:unite_data_directory='~/.vim/unite'
 nnoremap <Space> <Nop>
 nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
-nnoremap <Space>g :<C-u>Unite vimgrep<CR>
+nnoremap <Space>g :<C-u>Unite vcs_grep<CR>
 nnoremap <Space>/ :<C-u>Unite line<CR>
 
 autocmd FileType unite call s:unite_my_settings()
