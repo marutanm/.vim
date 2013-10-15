@@ -28,6 +28,7 @@ NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'goldfeld/vim-seek'
+NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kien/ctrlp.vim'
 
