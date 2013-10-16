@@ -26,7 +26,6 @@ NeoBundle 'Indent-Guides'
 NeoBundle 'Syntastic'
 NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
-NeoBundle 'rhysd/clever-f.vim'
 NeoBundle 'itchyny/lightline.vim'
 
 " specific
