@@ -13,7 +13,7 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'sgur/unite-git_grep'
@@ -148,9 +148,9 @@ vnoremap > >gv
 let g:molokai_original = 1
 
 " neocomplcache.vim
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_temporary_dir='~/.vim/neocon'
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#data_directory='~/.vim/neocon'
 
 " unite.vim
 "入力モードで開始する
